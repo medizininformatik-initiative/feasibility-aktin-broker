@@ -2,5 +2,8 @@
 
 export COMPOSE_PROJECT=codex-develop
 
-docker-compose -p $COMPOSE_PROJECT -f docker-compose.broker.yml down
-docker-compose -p $COMPOSE_PROJECT -f docker-compose.client.yml down
+cd aktin-broker
+docker-compose -p $COMPOSE_PROJECT up -d
+sleep 10
+cd ../aktin-client
+docker-compose -p $COMPOSE_PROJECT up -d

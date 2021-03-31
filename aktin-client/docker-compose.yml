@@ -1,10 +1,7 @@
 version: '3.7'
 services:
   aktin-client:
-    container_name: aktin-client
-    build:
-      context: ..
-      dockerfile: docker/Dockerfile.client
+    image: harbor.miracum.org/codex-ap2/aktin-client:1.1.2-snapshot
     volumes:
       - ./client-exec-scripts/echo.sh:/opt/codex-aktin/echo.sh
       - ./client-exec-scripts/call-cql.sh:/opt/codex-aktin/call-cql.sh
