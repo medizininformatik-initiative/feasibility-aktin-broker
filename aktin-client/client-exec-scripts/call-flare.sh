@@ -11,4 +11,4 @@ RESP=$(curl --location --request POST "$FLARE_BASE_URL/query-sync" \
 --data-raw "$QUERY_INPUT")
 
 
-echo $RESP
+printf "$RESP"
