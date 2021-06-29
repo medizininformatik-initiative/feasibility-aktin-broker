@@ -1,4 +1,4 @@
-FROM ghcr.io/num-codex/aktin-client:1.3.0
+FROM ghcr.io/num-codex/aktin-client:1.3.3
 
 USER root
 COPY ./client-exec-scripts /opt/aktin
