@@ -5,7 +5,7 @@ CLIENT_OBFUSCATE=${CLIENT_OBFUSCATE:-true}
 
 QUERY_INPUT=`cat`
 
-RESP=$(curl --location --request POST "$FLARE_BASE_URL/flare/query/execute" \
+RESP=$(curl --location --request POST "$FLARE_BASE_URL/query/execute" \
 --header 'Accept-Encoding: CSQ' \
 --header 'Content-Type: application/json' \
 --data-raw "$QUERY_INPUT")
