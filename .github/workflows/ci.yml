@@ -38,6 +38,5 @@ jobs:
         context: aktin-client
         file: aktin-client/Dockerfile
         tags: |
-          ghcr.io/${{ steps.prep.outputs.repository }}/aktin-client:latest
-          ghcr.io/${{ steps.prep.outputs.repository }}/aktin-client:${{ steps.prep.outputs.version }}
+          ghcr.io/${{ steps.prep.outputs.repository }}/feasibility-aktin-client:${{ steps.prep.outputs.version }}
         push: true
