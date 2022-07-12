@@ -27,7 +27,7 @@ The client has to be configured through the sysproc.properties file, which is mo
 |client.websocket.reconnect.seconds | | | |
 |client.websocket.reconnect.polling | | | |
 |process.timeout.seconds | | | |
-|process.command | |the path to the sh file which is to be executed by the client when the client recieves the request  |/opt/codex-aktin/return-request.sh|
+|process.command | |the path to the sh file which is to be executed by the client when the client recieves the request  |/opt/aktin/return-request.sh|
 |process.command.mapenv | | | |
 |process.args | | | |
 
@@ -42,7 +42,7 @@ To use your own script file, mount it into the docker container (see example `do
 To run the docker setup on one local machine execute the following commands:
 
 ```bash
-export COMPOSE_PROJECT=codex-develop
+export COMPOSE_PROJECT=feasibility-develop
 
 cd aktin-broker
 docker-compose -p $COMPOSE_PROJECT up -d
@@ -58,6 +58,6 @@ and execute `docker-compose -p $COMPOSE_PROJECT up -d`.
 Once started visit the admin at:
 
 http://localhost:8080/admin/html/login.html
-
+ 
 user: admin
 password: from AKTIN_ADMIN_PW environment variable - see above
