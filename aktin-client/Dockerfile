@@ -1,4 +1,4 @@
-FROM ghcr.io/aktin/aktin-client:1.3.3
+FROM ghcr.io/aktin/aktin-client:1.3.4
 
 USER root
 COPY sysproc.properties /opt/aktin

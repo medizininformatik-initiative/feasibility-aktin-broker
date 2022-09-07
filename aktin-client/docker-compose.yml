@@ -15,3 +15,4 @@ services:
       PROCESS_COMMAND: ${PROCESS_COMMAND:-/opt/aktin/call-flare.sh}
       PROCESS_ARGS: ${PROCESS_ARGS:-10}
       FLARE_BASE_URL: ${FLARE_BASE_URL:-http://node-flare:5000}
+      PROCESS_EXECUTOR_THREADS: ${PROCESS_EXECUTOR_THREADS:-1}
