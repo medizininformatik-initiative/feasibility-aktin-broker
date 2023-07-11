@@ -1,5 +1,7 @@
 # Docker Version of the AKTIN broker and client
 
+**DEPRECATED - please use: https://github.com/medizininformatik-initiative/feasibility-aktin-plugin **
+
 
 ## Broker Configuration
 
